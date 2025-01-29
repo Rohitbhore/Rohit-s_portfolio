@@ -1,0 +1,746 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #222;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(120deg, #3498db, #8e44ad);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero .cta-btn {
+    background: #f39c12;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero .cta-btn:hover {
+    background: #e67e22;
+}
+
+/* Section Styles */
+.section {
+    padding: 4rem 2rem;
+}
+
+.section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.skill-card {
+    background: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.skill-card:hover {
+    background: #2980b9;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #f39c12;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #e67e22;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+ 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #3498db;
+}
+
+.project-card a {
+    margin-top: 1rem;
+    display: inline-block;
+}
+/* Testimonials Section */
+.testimonials-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.testimonial-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #3498db;
+}
+
+.testimonial-author h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.testimonial-author span {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.blog-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.blog-card h3 {
+    font-size: 1.25rem;
+    color: #3498db;
+}
+
+.blog-card a {
+    margin-top: 1rem;
+    display: inline-block;
+    color: #f39c12;
+}
+
+/* Resume Section */
+.resume-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.resume-highlights {
+    flex: 1 1 50%;
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resume-highlights h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.resume-highlights ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resume-highlights ul li {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.resume-highlights ul li strong {
+    color: #3498db;
+}
+
+.resume-download {
+    flex: 1 1 40%;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resume-download h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.resume-download p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.resume-download .cta-btn {
+    background-color: #fff;
+    color: #3498db;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-download .cta-btn:hover {
+    background-color: #f0f0f0;
+    color: #1d6fa5;
+}
+/* Global Body Background */
+body {
+    background: linear-gradient(135deg, #f0f0f0, #dfe6e9); /* Soft gradient background */
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Header Section */
+header {
+    background-color: #2c3e50; /* Darker header background */
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+/* About Section */
+#About {
+    background-color: #ffffff; /* Light white background for a clean look */
+    padding: 4rem 0;
+}
+
+#About h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+/* Skills Section */
+#Skills {
+    background-color: #ecf0f1; /* Light pastel background */
+    padding: 3rem 0;
+}
+
+#Skills h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.skills-list li {
+    background-color: #3498db; /* Blue background for skill items */
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* Testimonials Section */
+#Testimonials {
+    background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient blue to purple */
+    color: #fff;
+    padding: 4rem 0;
+}
+
+.testimonial-card {
+    background-color: #fff; /* Card background in white */
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Resume Section */
+/* Resume Section */
+#Resume {
+    background-color: #e3f2fd; /* Light blue background */
+    color: #333;
+    padding: 4rem 0;
+}
+
+
+.resume-highlights, .resume-download {
+    background-color: #ffffff; /* White background for cards */
+    color: #333;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resume-download {
+    background-color: #1abc9c; /* Call to action button background */
+    color: #fff;
+}
+/* Contact Section */
+#Contact {
+    background-color: #2c3e50; /* Dark background */
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#Contact h2 {
+    font-size: 2rem;
+}
+
+#Contact p {
+    font-size: 1.1rem;
+}
+
+.cta-btn {
+    background-color: #f39c12; /* Yellow button */
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(135deg, #dfe6e9, #f0f0f0); /* Slight variation in gradient for mobile */
+    }
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f0f0f0, #dfe6e9); /* Soft gradient background */
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+header .cta-btn {
+    background-color: #f39c12;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* About Section */
+#About {
+    background-color: #ffffff;
+    padding: 4rem 0;
+}
+
+#About h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.about-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Skills Section */
+#Skills {
+    background-color: #ecf0f1;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#Skills h2 {
+    font-size: 2.5rem;
+}
+
+.skills-list {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.skills-list li {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    flex: 1;
+    min-width: 150px; /* Allow flexible width on small screens */
+}
+
+/* Testimonials Section */
+#Testimonials {
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    color: #fff;
+    padding: 4rem 0;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial-card p {
+    font-size: 1.2rem;
+}
+
+/* Resume Section */
+#Resume {
+    background-color: #e3f2fd;
+    color: #333;
+    padding: 4rem 0;
+}
+
+.resume-highlights, .resume-download {
+    background-color: #ffffff;
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resume-download {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+/* Contact Section */
+#Contact {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#Contact h2 {
+    font-size: 2.5rem;
+}
+
+#Contact p {
+    font-size: 1.1rem;
+}
+
+.cta-btn {
+    background-color: #f39c12;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    header .cta-btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack the content vertically */
+        text-align: center;
+    }
+
+    .about-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #Skills .skills-list {
+        flex-direction: column; /* Stack skills vertically on smaller screens */
+    }
+
+    .skills-list li {
+        min-width: 100%; /* Full width on small screens */
+    }
+
+    .testimonial-card {
+        width: 90%; /* Adjust card width for small screens */
+    }
+
+    #Contact h2 {
+        font-size: 2rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.3rem;
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack content on tablet screens */
+    }
+
+    .about-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    #Skills .skills-list {
+        flex-direction: column;
+    }
+
+    .skills-list li {
+        min-width: 100%;
+    }
+
+    .testimonial-card {
+        width: 80%; /* Adjust card width */
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+
+    .about-content {
+        flex-direction: row;
+    }
+
+    .about-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .skills-list {
+        flex-direction: row;
+    }
+
+    .skills-list li {
+        min-width: 150px;
+    }
+
+    .testimonial-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    #Contact .cta-btn {
+        font-size: 1.2rem;
+    }
+}
+/* Hover Effect for Buttons */
+.cta-btn:hover {
+    background-color: #e67e22; /* Slightly darker yellow */
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects for Skills */
+.skills-list li:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
